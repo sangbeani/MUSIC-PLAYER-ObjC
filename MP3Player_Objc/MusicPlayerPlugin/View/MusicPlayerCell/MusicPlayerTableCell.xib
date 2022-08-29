@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MusicPlayerTableCell" rowHeight="75" id="KGk-i7-Jjw" customClass="MusicPlayerTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Pnr-if-duF">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="lly-U1-MbX"/>
+                            <constraint firstAttribute="width" constant="60" id="m2L-HL-qfT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17_5A단계 161~170" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f8n-8U-WiU">
+                        <rect key="frame" x="76" y="28" width="298" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Pnr-if-duF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Mty-pn-4Dc"/>
+                    <constraint firstItem="f8n-8U-WiU" firstAttribute="centerY" secondItem="Pnr-if-duF" secondAttribute="centerY" id="Wf1-FB-rac"/>
+                    <constraint firstAttribute="bottom" secondItem="Pnr-if-duF" secondAttribute="bottom" constant="8" id="jE0-v0-bwG"/>
+                    <constraint firstItem="Pnr-if-duF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="tQx-l7-9QU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="musicName" destination="f8n-8U-WiU" id="mtp-8Y-ruG"/>
+            </connections>
+            <point key="canvasLocation" x="85.507246376811594" y="123.54910714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="list_bg" width="84" height="84"/>
+    </resources>
+</document>
